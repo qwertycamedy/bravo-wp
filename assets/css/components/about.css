@@ -1,0 +1,116 @@
+.about__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about__head {
+  margin-bottom: 36px;
+}
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.about__img {
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about__card {
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  border: 1px solid var(--gold);
+  padding: 20px 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.about__card-outer {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.about__card-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.about__card-list-item {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.about__card-ico {
+  position: absolute;
+  z-index: -1;
+  color: var(--gold-10);
+  width: 295px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  left: 40px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+@media (max-width: 1100px) {
+  .about__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .about__head {
+    margin-bottom: 25px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .about__card {
+    gap: 29px;
+  }
+  .about__card-ico {
+    left: 70px;
+  }
+  .about__card-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    height: auto;
+  }
+  .about__card-list-item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

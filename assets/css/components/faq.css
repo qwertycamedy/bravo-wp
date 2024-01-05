@@ -1,0 +1,108 @@
+.faq__acc {
+  padding: 20px 0 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  transition: border-color 0.15s linear, background 0.15s linear;
+}
+.faq__acc:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (any-hover: hover) {
+  .faq__acc:hover {
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+.faq__acc-active {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.06);
+}
+.faq__acc-active .faq__acc-control {
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.faq__acc-active .faq__acc-ico {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.faq__acc-active .faq__acc-content {
+  opacity: 1;
+}
+.faq__acc-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+  padding: 0 36px;
+  color: inherit;
+  -webkit-transition: color 0.15s linear, margin-bottom 0.15s linear;
+  transition: color 0.15s linear, margin-bottom 0.15s linear;
+}
+.faq__acc-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  text-align: left;
+}
+.faq__acc-ico {
+  width: 40px;
+  height: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 0.15s linear, -webkit-transform 0.15s linear;
+  transition: color 0.15s linear, -webkit-transform 0.15s linear;
+  transition: color 0.15s linear, transform 0.15s linear;
+  transition: color 0.15s linear, transform 0.15s linear, -webkit-transform 0.15s linear;
+}
+.faq__acc-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 60px 0 36px;
+  will-change: max-height;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+@media (max-width: 1100px) {
+  .faq__acc {
+    padding: 15px 0;
+  }
+  .faq__acc-active .faq__acc-control {
+    margin-bottom: 10px;
+  }
+  .faq__acc-control, .faq__acc-content {
+    padding: 0 15px;
+  }
+  .faq__acc-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .faq__acc-ico {
+    width: 28px;
+    height: 28px;
+  }
+  .faq__acc-content {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=faq.css.map */
